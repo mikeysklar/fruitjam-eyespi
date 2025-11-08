@@ -15,10 +15,10 @@ displayio.release_displays()
 time.sleep(0.5)
 
 # --- your pins ---
-tft_backlight = board.A1   # backlight
-tft_dc        = board.D7   # D/C
+tft_backlight = board.D10  # backlight
+tft_dc        = board.D9   # D/C
 tft_reset     = board.D8   # RST
-tft_cs        = board.D9   # CS
+tft_cs        = board.D7   # CS
 
 # --- backlight on ---
 bl = digitalio.DigitalInOut(tft_backlight)
