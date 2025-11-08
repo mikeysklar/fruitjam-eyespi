@@ -2369,7 +2369,17 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 101.6) (xy 137.16 101.6)
+			(xy 135.89 96.52) (xy 132.08 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0922a5b7-335a-4b19-b340-acc906ed4e19")
+	)
+	(wire
+		(pts
+			(xy 132.08 68.58) (xy 137.16 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2419,7 +2429,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 91.44) (xy 135.89 91.44)
+			(xy 132.08 88.9) (xy 135.89 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2539,7 +2549,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 88.9) (xy 132.08 88.9)
+			(xy 135.89 93.98) (xy 132.08 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2589,7 +2599,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 86.36) (xy 132.08 86.36)
+			(xy 135.89 91.44) (xy 132.08 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2609,7 +2619,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 93.98) (xy 135.89 93.98)
+			(xy 132.08 86.36) (xy 135.89 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2758,7 +2768,7 @@
 		(uuid "2dc1e559-d6ed-4f11-a00b-40389de27011")
 	)
 	(label "busy"
-		(at 135.89 88.9 180)
+		(at 135.89 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2928,7 +2938,7 @@
 		(uuid "c66f4993-9d9a-41fe-ae1c-11b9058d0f86")
 	)
 	(label "mcs"
-		(at 135.89 93.98 180)
+		(at 135.89 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2957,8 +2967,18 @@
 		)
 		(uuid "d7abeea1-69e7-4a8a-859e-1796c85617d8")
 	)
+	(label "gpio1"
+		(at 135.89 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d9b2cf31-cfba-4c1b-b761-4c4de5fda135")
+	)
 	(label "tscs"
-		(at 135.89 91.44 180)
+		(at 135.89 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2998,7 +3018,7 @@
 		(uuid "f51362f1-83ef-4cb7-aa5b-974be8326a35")
 	)
 	(label "int"
-		(at 135.89 86.36 180)
+		(at 135.89 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3406,7 +3426,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 137.16 101.6 270)
+		(at 137.16 68.58 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3414,7 +3434,7 @@
 		(dnp no)
 		(uuid "80ad4018-dd7b-4696-a63f-dbee0bb3d917")
 		(property "Reference" "#PWR017"
-			(at 133.35 101.6 0)
+			(at 133.35 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3423,7 +3443,7 @@
 			)
 		)
 		(property "Value" "3v3"
-			(at 141.732 101.6 90)
+			(at 141.732 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3431,7 +3451,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 101.6 0)
+			(at 137.16 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3440,7 +3460,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 101.6 0)
+			(at 137.16 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3449,7 +3469,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 137.16 101.6 0)
+			(at 137.16 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
