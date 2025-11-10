@@ -1,6 +1,6 @@
 # 🧠 Fruit Jam → EyeSPI Display Adapter
 
-![Fruit Jam to EyeSPI Adapter](images/fruitjam-eyespi-banner.jpg)
+![Fruit Jam to EyeSPI Adapter](images/fj-demo.jpeg)
 *Single-sided breakout board CNC-milled, fiber-laser etched, and resin-coated.*
 
 ---
