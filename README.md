@@ -80,10 +80,13 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 
 ---
 
-### 📘 Notes
+![Fruit Jam to EyeSPI Adapter](images/fj-scope-glossy.jpeg)
+
+
+### Notes
 
 - Logic-level operation is **3.3 V only** — no level shifting required.  
-- Supports SPI or I²C EyeSPI displays (e.g. ST7789, ILI9341, GC9A01, and ePaper).  
+- Supports SPI or I²C EyeSPI displays (e.g. ST7735, ST7789, ILI9341, GC9A01, etc.).  
 - Unused pins can be repurposed for GPIO or future display functions.  
 - Compatible with **CircuitPython `displayio`** and Adafruit Display libraries.  
 
@@ -91,26 +94,19 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 
 ---
 
-## 🧪 Testing & Compatibility
+![Fruit Jam to EyeSPI Adapter](images/fj-scope-raw.jpeg)
+
+## Testing & Compatibility
 
 The adapter has been validated with the following setup:
 
 - **CircuitPython 10.x**  
 - **Adafruit Fruit Jam** (RP2350-based)  
-- **Displays:**  
-  - TL034WVS05-B1477A 480×480 TFT  
-  - 1.9" 240×320 TFT (EyeSPI)  
-- **Libraries:** `displayio`, `adafruit_st7789`, `adafruit_rgb_display`  
+- **Display:**  
+  - [2.8" TFT LCD with Cap Touch](https://www.adafruit.com/product/2090)
+- **Connector**
+  - [EYESPI Cable - 18 Pin 100mm](https://www.adafruit.com/product/5239)
 
 **Example Test Code:**
 
-```python
-import board, displayio
-from adafruit_st7789 import ST7789
-
-spi = board.SPI()
-tft_cs = board.D9
-tft_dc = board.D10
-display_bus = displayio.FourWire(spi, command=tft_dc, chip_select=tft_cs)
-display = ST7789(display_bus, width=240, height=320, rotation=180)
-
+[View fj-eyespi.py on GitHub](https://github.com/mikeysklar/fruitjam-eyespi/blob/main/src/fj-eyespi.py)
