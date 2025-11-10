@@ -463,7 +463,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "fj-eyespi-max.kicad_pro",
+    "filename": "fj-eyespi.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -502,7 +502,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "fj-eyespi.step",
       "svg": "",
       "vrml": ""
     },
