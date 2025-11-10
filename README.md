@@ -5,22 +5,23 @@
 
 ---
 
+![Fruit Jam to EyeSPI Adapter](images/fj-scope-asm.jpeg)
+
 ## 🧩 Overview
 
-This project is a **compact breakout PCB** that connects the **16-pin Adafruit Fruit Jam header** to an **18-pin EyeSPI FFC** connector for driving TFT displays directly — **no HDMI required**.
+This project is a **compact breakout PCB** that connects the **16-pin Adafruit Fruit Jam header** to an **18-pin EyeSPI FFC** connector for driving TFT displays 
 
-It allows the **Fruit Jam** to output to Adafruit EyeSPI displays using **CircuitPython’s `displayio`**, enabling small embedded builds like:
+It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling small embedded builds like:
 
 - 🎧 **MP3 or media players**
-- 💻 **Pocket computers**
 - 🕹️ **Mini gaming consoles**
+- 💻 **Pocket computers**
 - 🔧 **Control panels and dashboards**
 - 📟 **Status monitors**
 - 🧩 **Rapid prototyping setups**
 
-This adapter bridges creativity and portability — ideal for compact, all-in-one projects that still need a vivid screen.
-
 ---
+
 
 ## 🧰 Features
 
