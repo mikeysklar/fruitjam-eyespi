@@ -37,9 +37,9 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 
 | Folder | Description |
 |:-------|:-------------|
-| `[/fj-eyespi/](fj-eyespi)` | KiCad schematic and PCB layout files |
-| `[/fj-eyespi/fj-eyespi.step](fj-eyespi/fj-eyespi.step)` | 3D STEP and render files for case design or visualization |
-| `[/images/](images)` | Build photos, renders, and setup examples |
+| [/fj-eyespi/](fj-eyespi) | KiCad schematic and PCB layout files |
+| [/fj-eyespi/fj-eyespi.step](fj-eyespi/fj-eyespi.step) | 3D STEP and render files for case design or visualization |
+| [/images/](images) | Build photos, renders, and setup examples |
 
 ---
 
