@@ -53,8 +53,6 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 - **Fabrication:** CNC milled + laser etched traces + resin coat  
 - **Connector Orientation:** FFC faces upward (standard EyeSPI alignment)
 
-**Example Configuration:**
-
 ### 🧩 Pin Mapping — Fruit Jam 2×16 Header (J2) → EyeSPI 18-Pin Socket (J1)
 
 | Function | Fruit Jam | EyeSPI Pin | Notes |
@@ -81,8 +79,17 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 
 ---
 
-![Fruit Jam to EyeSPI Adapter](images/fj-scope-glossy.jpeg)
+### Schematic
 
+![KiCAD Schematic](images/fj-sch.png)
+
+---
+
+### PCB 
+
+![KiCAD PCB](images/fj-pcb.png)
+
+---
 
 ### Notes
 
