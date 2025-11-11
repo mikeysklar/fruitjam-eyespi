@@ -1,7 +1,7 @@
 # Fruit Jam → EyeSPI Display Adapter
 
 ![Fruit Jam to EyeSPI Adapter](images/fj-demo.jpeg)
-*Single-sided breakout board CNC-milled, fiber-laser etched, and resin-coated.*
+*Single-sided PCB CNC-milled, fiber-laser etched, and resin-coated.*
 
 ---
 
@@ -21,6 +21,7 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 ---
 
 ![Fruit Jam to EyeSPI Adapter](images/fj-scope-asm.jpeg)
+*Assembeld finished DIY PCB*
 
 ## Features
 
@@ -36,13 +37,14 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 
 | Folder | Description |
 |:-------|:-------------|
-| `/fj-eyespi/` | KiCad schematic and PCB layout files |
-| `/fj-eyespi/fj-eyespi.step` | 3D STEP and render files for case design or visualization |
-| `/images/` | Build photos, renders, and setup examples |
+| `[/fj-eyespi/](fj-eyespi)` | KiCad schematic and PCB layout files |
+| `[/fj-eyespi/fj-eyespi.step](fj-eyespi/fj-eyespi.step)` | 3D STEP and render files for case design or visualization |
+| `[/images/](images)` | Build photos, renders, and setup examples |
 
 ---
 
 ![Fruit Jam to EyeSPI Adapter](images/fj-stencil.jpeg)
+*Metallic Stencil and Home Etched PCB*
 
 ## 🧩 Hardware Design
 
