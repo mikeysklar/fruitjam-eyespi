@@ -26,7 +26,6 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 ## Features
 
 - Plug-and-play with **Adafruit EyeSPI TFT displays**
-- Fully compatible with **CircuitPython 10**
 - Fabricated as a **single-sided PCB** using **CNC + fiber laser**
 - Protected with a **UV resin coat** for strength and finish
 - Low Profile and easy SMT stencil assembly
@@ -44,7 +43,7 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 ---
 
 ![Fruit Jam to EyeSPI Adapter](images/fj-stencil.jpeg)
-*Metallic Stencil and Home Etched PCB*
+*Metallic Stencil and Home Etched glossy PCB in solder paste jig*
 
 ## 🧩 Hardware Design
 
@@ -58,12 +57,12 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 
 ### 🧩 Pin Mapping — Fruit Jam 2×16 Header (J2) → EyeSPI 18-Pin Socket (J1)
 
-| Function | Fruit Jam Pin (J2) | EyeSPI Pin (J1) | Notes |
+| Function | Fruit Jam | EyeSPI Pin | Notes |
 |:----------|:------------------:|:----------------:|:------|
-| 5 V | 1 / 2 / 31 / 32 | — | 5 V rail (not used by EyeSPI) |
+| 5 V | 1 / 2 / 31 / 32 | — | 5 V rail (unused) |
 | 3.3 V (VCC) | 3 / 30 | 18 (VCC) | Main display power |
 | GND | 5 / 6 / 28 / 29 | 16 (GND) | Ground return |
-| Backlight EN (lite) | 8 | 17 (lite) | Controls display backlight |
+| Backlight | 8 | 17 (lite) | Controls display backlight |
 | SCL / SPI CLK | 7 / 21 | 15 (sck) | SPI clock signal |
 | SDA / SPI MOSI | 9 / 17 | 14 (mosi) | SPI data (MCU → display) |
 | MISO | 19 | 13 (miso) | SPI data (display → MCU) |
@@ -73,8 +72,8 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 | SDCS (SD Card CS) | 16 | 9 (sdcs) | SD card chip-select |
 | MCS | 18 | 8 (mcs) | Memory chip-select (optional) |
 | TSCS (Touch CS) | 20 | 7 (tscs) | Touch controller chip-select |
-| SCL /I²C | 7 | 6 (scl) | For touch controller (I²C mode) |
-| SDA /I²C | 9 | 5 (sda) | For touch controller (I²C mode) |
+| SCL /I²C | 7 | 6 (scl) | touch controller (I²C) |
+| SDA /I²C | 9 | 5 (sda) | touch controller (I²C) |
 | INT | 22 | 4 (int) | Touch interrupt signal |
 | BUSY | 24 | 3 (busy) | ePaper / Touch busy signal |
 | GPIO1 | 26 | 2 (gpio1) | General purpose I/O |
@@ -88,27 +87,26 @@ It allows the **Fruit Jam** to output to Adafruit EyeSPI displays, enabling smal
 ### Notes
 
 - Logic-level operation is **3.3 V only** — no level shifting required.  
-- Supports SPI or I²C EyeSPI displays (e.g. ST7735, ST7789, ILI9341, GC9A01, etc.).  
+- Supports SPI or I²C Touch EyeSPI displays (e.g. ST7735, ST7789, ILI9341, GC9A01, etc.).  
 - Unused pins can be repurposed for GPIO or future display functions.  
-- Compatible with **CircuitPython `displayio`** and Adafruit Display libraries.  
-
-*(Add your final verified pin mapping table and reference diagram here.)*
 
 ---
 
 ![Fruit Jam to EyeSPI Adapter](images/fj-scope-raw.jpeg)
 
-## Testing & Compatibility
+## Bill of Materials
 
 The adapter has been validated with the following setup:
 
-- **CircuitPython 10.x**  
-- **Adafruit Fruit Jam** (RP2350-based)  
-- **Display:**  
-  - [2.8" TFT LCD with Cap Touch](https://www.adafruit.com/product/2090)
-- **Connector**
-  - [EYESPI Cable - 18 Pin 100mm](https://www.adafruit.com/product/5239)
+| **Category**        | **Part** | **Link** |
+|----------------------|----------|-----------|
+| **Main Board** | Adafruit Fruit Jam (RP2350-based) | [Fruit Jam](https://www.adafruit.com/product/6200) |
+| **Display** | 2.8" TFT LCD with Cap Touch | [Adafruit 2.8" TFT LCD with Cap Touch (PID 2090)](https://www.adafruit.com/product/2090) |
+| **Flex Cable** | EYESPI Cable - 18 Pin 100mm | [EYESPI Cable - 18 Pin 100mm (PID 5239)](https://www.adafruit.com/product/5239) |
+| **FPC Connector** | 18-pin 0.5mm Bottom Mount | [18-pin 0.5mm Bottom Mount FPC Connector (AliExpress)](https://www.aliexpress.us/item/3256806632323296.html) |
+| **Male Header** | 2x20 SMT Header Male Double Row Short | [2x20 SMT Header Male Double Row Short (AliExpress)](https://www.aliexpress.us/item/3256803267239198.html) |
 
-**Example Test Code:**
+
+## Code
 
 [View fj-eyespi.py on GitHub](https://github.com/mikeysklar/fruitjam-eyespi/blob/main/src/fj-eyespi.py)
