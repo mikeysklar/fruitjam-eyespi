@@ -7,6 +7,8 @@ from adafruit_display_text import label
 from fourwire import FourWire
 import adafruit_ili9341
 
+time.sleep(0.5)
+
 # --- release built-in display (Fruit Jam) ---
 if hasattr(board, "DISPLAY"):
     board.DISPLAY.auto_refresh = False
